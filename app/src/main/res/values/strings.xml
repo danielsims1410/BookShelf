@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Bookshelf</string>
+    <!-- Author Strings -->
+    <string name="add_author_title">Enter the Following&#8230;</string>
+    <string name="author_name_lbl">Author\'s Name:</string>
+    <string name="author_name_hint">Author\'s Name</string>
+    <string name="author_age_lbl">Author\'s Age:</string>
+    <string name="author_age_hint">Author\'s Age</string>
+    <string name="author_genre_lbl">Author\'s Primary Genre:</string>
+    <string name="author_genre_hint">Author\'s Genre</string>
+    <string name="author_known_for_lbl">Work They\'re Known For:</string>
+    <string name="author_known_for_hint">Notable Work</string>
+    <string name="profile_image_required_warning">Profile Image Required!</string>
+    <string name="add_profile_image_btnLbl">Add Profile Image</string>
+    <string name="add_author_btnLbl">Add Author</string>
+
+    <string name="update_author_title">Update Author</string>
+    <string name="change_image_btnLbl">Change Image</string>
+    <string name="no_books_warning">No Books Found for this Author!</string>
+    <string name="add_new_book_btnLbl">Add New Book</string>
+    <string name="change_image_2_btnLbl">Change Image Again</string>
+    <string name="books_by_this_author_lbl">Books by this Author:</string>
+
+    <!-- Book Strings -->
+    <string name="add_book_title">New Book</string>
+    <string name="book_title_lbl">Book Title:</string>
+    <string name="book_title_hint">Book Title</string>
+    <string name="date_read_lbl">Date Read:</string>
+    <string name="choose_date_btnLbl">Choose Date</string>
+    <string name="review_score_lbl">Review Score:</string>
+    <string name="review_score_hint">Review Score</string>
+    <string name="out_of_five">/5</string>
+    <string name="page_count_lbl">Page Count:</string>
+    <string name="page_count_hint">How many Pages?</string>
+    <string name="add_book_btnLbl">Add Book</string>
+
+    <string name="update_book_title">Update Book</string>
+    <string name="change_date_btnLbl">Change Date</string>
+    <string name="update_book_title_half">Update </string>
+
+    <!-- Adapters -->
+    <string name="adapter_genre_lbl">Genre: </string>
+    <string name="adapter_known_for_lbl">Known for: </string>
+    <string name="adapter_age_lbl">Age: </string>
+    <string name="adapter_page_count_lbl">Page Count: </string>
+    <string name="adapter_date_read_lbl">Date Read: </string>
+
+    <!-- Misc. -->
+    <string name="delete_btnLbl">Delete</string>
+    <string name="update_btnLbl">Update</string>
+</resources>

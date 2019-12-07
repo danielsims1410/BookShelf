@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtUpdateBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Book"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/txtUpdateBookTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Title:" />
+
+        <EditText
+            android:id="@+id/etUpdateBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/txtUpdateBookDateReadLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Read:" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etUpdateBookDateRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="26sp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUpdateDateRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="Change Date"
+                android:layout_marginBottom="15dp"
+                android:onClick="onClickButtonHandlerUpdateBook"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtUpdateBookReviewScoreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review Score:"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/etUpdateReviewScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:textColor="@color/colorAccent"
+                android:textSize="26sp"
+                android:inputType="number"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/txtUpdateReviewRangeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/out_of_five"/>
+
+            <ImageView
+                android:id="@+id/imgUpdateBookStar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/review_single"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtUpdateBookPageCountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page Count:"/>
+
+        <EditText
+            android:id="@+id/etUpdatePageCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="26sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUpdateBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update this Book"
+                android:onClick="onClickButtonHandlerUpdateBook"
+                android:layout_margin="5dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Book"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_margin="5dp"
+                android:onClick="onClickButtonHandlerUpdateBook"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

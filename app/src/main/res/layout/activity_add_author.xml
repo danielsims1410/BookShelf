@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddAuthorActivity"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the Following..."
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/txtNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author's Name: "/>
+
+        <EditText
+            android:id="@+id/etEnterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Author's Name"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtAgeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author's Age:" />
+
+        <EditText
+            android:id="@+id/etEnterAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Author's Age"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtGenreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author's Primary Genre:"/>
+
+        <EditText
+            android:id="@+id/etEnterGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Author's Genre"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtKnownForLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work They're Known For:"/>
+
+        <EditText
+            android:id="@+id/etEnterKnownFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Notable Work"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtImageMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Image Required!"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Add Profile Image"
+            android:onClick="onAddImageClick"/>
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:visibility="gone"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInsertAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Author"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:onClick="onInsertAuthorClick"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

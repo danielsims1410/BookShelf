@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android='http://schemas.android.com/apk/res/android'
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    style="@style/Widget.MaterialComponents.CardView"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Title"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/txtBookPageCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page Count"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/txtBookDateRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Read"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/imgStars"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

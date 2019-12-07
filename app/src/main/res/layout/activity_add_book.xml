@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddBookActivity"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtNewBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Book"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/txtBookTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Title:" />
+
+        <EditText
+            android:id="@+id/etEnterBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Book Title"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtBookDateReadLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Read:" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etEnterBookDateRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:visibility="gone"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnChooseDateRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="Choose Date"
+                android:layout_marginBottom="15dp"
+                android:onClick="onClickBtnChooseDateRead"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtBookReviewScoreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review Score:"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/etEnterReviewScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:hint="Review Score"
+                android:inputType="number"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/txtReviewRangeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/5"/>
+
+            <ImageView
+                android:id="@+id/imgStarDecor"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/review_single"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtBookPageCountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page Count:"/>
+
+        <EditText
+            android:id="@+id/etEnterPageCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="How many Pages?"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInsertBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add this Book"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:onClick="onInsertBookClick"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
